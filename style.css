@@ -1,0 +1,47 @@
+.navbar1{
+   background-color: aqua;
+
+}
+.body{
+    margin: 0px;
+
+}
+.carousel-item {
+    height: 80vh;
+}
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20%;
+    bottom: 0;
+}
+.carousel-caption h5 {
+    font-size: 50px;
+}
+@media (max-width: 767.98px) {
+    .carousel-item {
+        height: 100vh;
+    }
+
+    .carousel-item img {
+        height: 80%;
+    }
+}
+.tesla{
+    height: 30px;
+    object-fit: contain;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Optional: align properly */
+}
+
