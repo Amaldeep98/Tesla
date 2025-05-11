@@ -7,6 +7,7 @@
     <link rel="icon" href="images/tab.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
     <title>Electric Cars, Solar & Clean Energy | Tesla</title>
 </head>
 <body>
@@ -29,14 +30,23 @@
                   Charging
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Home Charging</a></li>
+                  <li><a class="dropdown-item" href="#">Fast Charging</a></li>
+                  <li><a class="dropdown-item" href="#">Super Charging</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown ms-3">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Discover
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Resources</a></li>
+                  <li><a class="dropdown-item" href="#">location Service</a></li>
+                  <li><a class="dropdown-item" href="#">Company</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link " >Disabled</a>
+                <a class="nav-link " >Shop</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -92,6 +102,141 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <!----------------------------------cards----------------------------------- -->
+
+      <div class="card-scroll-container ms-4 mt-5">
+        <div class="card">
+          <img src="images/modely-b.avif" class="card-img-top " alt="Model Y">
+          <h5 class="card-title fw-bold text-white">Midsize SUV</h5>
+          <div class="order-now text-light">
+            <h1>Model Y</h1>
+            <h5>Up to 357 mi Range (EPA est.)</h5>
+            <p class="card-text">From $37,490 After Federal Tax Credit2</p>
+            <button class="btn btn-primary me-3">Order Now</button>
+            <button class="btn btn-light">Learn More</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="images/model3-b.avif" class="card-img-top " alt="Model 3">
+          <h5 class="card-title fw-bold text-white">Sports Sedan</h5>
+          <div class="order-now text-light">
+            <h1>Model 3</h1>
+            <h5>Lease from $349/mo With Zero Down</h5>
+            <br><br>
+            <button class="btn btn-primary me-3">Order Now</button>
+            <button class="btn btn-light">Learn More</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="images/modelct-b.avif" class="card-img-top " alt="Cybertruck">
+          <h5 class="card-title fw-bold text-white">Utility truck</h5>
+          <div class="order-now text-light">
+            <h1>
+              <img src="css/svg/cybertruck.svg" style="height: 60px; filter: invert(100%);">
+            </h1>
+            <h5>Lease from $779/mo</h5>
+            <p class="card-text">From $37,490 After Federal Tax Credit2</p>
+            <button class="btn btn-primary me-3">Order Now</button>
+            <button class="btn btn-light">Learn More</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="images/modelx-b.avif" class="card-img-top " alt="Model X">
+          <h5 class="card-title fw-bold text-white">Model X</h5>
+          <div class="order-now text-light">
+            <h1>Model X</h1>
+            <h5>Free Supercharging Ending Soon</h5>
+            <br><br>
+            <button class="btn btn-primary me-3">Order Now</button>
+            <button class="btn btn-light">Learn More</button>
+          </div>
+        </div>
+      
+        <div class="card">
+          <img src="images/models-b.avif" class="card-img-top " alt="Model S">
+          <h5 class="card-title fw-bold text-white">Model S</h5>
+          <div class="order-now text-light">
+            <h1>Model S</h1>
+            <h5>Free Supercharging Ending Soon</h5>
+            <br><br>
+            <button class="btn btn-primary me-3">Order Now</button>
+            <button class="btn btn-light">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <!-----------------------------compre------------------------------------->
+
+      <!-- <div class="row m-4">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card">
+            <div class="card-body">
+              <h1 class="text-primary fw-bold">Compare Model</h1>
+              <p class="">Find the Tesla Vechicle that's right for you.</p>
+              <a href="#" class="btn btn-primary">Comapre models</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 mb-sm-0">
+            <div class="card">
+                <div class="card-body">
+                  <h1 class="text-primary fw-bold">Explore Charging</h1>
+                  <p>Find the charging option which fit in your life style</p>
+                  <a href="#" class="btn btn-primary">Expolre charging </a>
+                </div>
+          </div>
+        </div>
+        
+      </div>
+        
+        </div>
+      </div> -->
+      <!-- map -->
+      <!-- <div class="container mt-4">
+        <div class="col-12 text-center">
+            <button class="mb-4 p-3 text-info border border-pill disabled">Find Your charge</button>
+        </div>
+        <div id="map"></div>
+        <div class="charging-legend justify-content-center">
+          <span><span class="dot red"></span> Superchargers</span>
+          <span><span class="dot gray"></span> Destination Chargers</span>
+        </div>
+      </div>
+       -->
+
+</div>
+
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    // Initialize map
+    var map = L.map('map').setView([39.5, -98.35], 4); // Centered on US
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 18,
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    // Sample Supercharger marker
+    var superchargerIcon = L.circleMarker([37.7749, -122.4194], {
+      radius: 5,
+      color: 'red',
+      fillColor: 'red',
+      fillOpacity: 0.8
+    }).bindPopup("Supercharger - San Francisco").addTo(map);
+
+    // Sample Destination Charger marker
+    var destinationIcon = L.circleMarker([34.0522, -118.2437], {
+      radius: 5,
+      color: 'gray',
+      fillColor: 'gray',
+      fillOpacity: 0.8
+    }).bindPopup("Destination Charger - Los Angeles").addTo(map);
+  </script>
       
         
    
